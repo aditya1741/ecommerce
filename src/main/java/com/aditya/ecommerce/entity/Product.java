@@ -5,7 +5,7 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Table(schema = "products")
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +17,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private String name;
-    private String Description;
+    private String description;
     private double price;
     private int stock;
     private LocalDateTime createdAt;
