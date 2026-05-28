@@ -7,13 +7,14 @@ import lombok.*;
 @Getter
 @Setter
 public class ProductRequestDto {
+    @NotBlank
     private String name;
     private String description;
     @Positive
     private double price;
     @Positive
     private int stock;
-
+    @NotBlank
     private Long categoryId;
 
 }

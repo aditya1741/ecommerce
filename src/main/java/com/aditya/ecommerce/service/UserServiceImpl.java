@@ -4,6 +4,7 @@ import com.aditya.ecommerce.dtos.userdtos.UserRequestDto;
 import com.aditya.ecommerce.dtos.userdtos.UserResponseDto;
 import com.aditya.ecommerce.entity.User;
 import com.aditya.ecommerce.exception.UserNotFoundException;
+import com.aditya.ecommerce.mapper.UserMapper;
 import com.aditya.ecommerce.repository.UserRepo;
 import org.springframework.stereotype.Service;
 
@@ -35,11 +36,7 @@ public class UserServiceImpl implements IUserService {
                 .build();
         User savedUser = repo.save(user);
 
-        return UserResponseDto.builder()
-                .id(savedUser.getId())
-                .name(savedUser.getName())
-                .email(savedUser.getEmail())
-                .build();
+        return UserMapper.toResponseDto(savedUser);
 
 
     }
@@ -48,10 +45,6 @@ public class UserServiceImpl implements IUserService {
     public UserResponseDto getUser(Long id) {
         User user = repo.findById(id).
                 orElseThrow(() -> new UserNotFoundException("User Not Found"));
-        return UserResponseDto.builder()
-                .id(user.getId())
-                .name(user.getName())
-                .email(user.getEmail())
-                .build();
+        return UserMapper.toResponseDto(user);
     }
 }

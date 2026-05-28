@@ -9,7 +9,7 @@ import java.util.List;
 public interface IProductService {
     ProductResponseDto create(ProductRequestDto productReq);
     Page<ProductResponseDto> getAll(int page, int size);
-    ProductResponseDto getById(Long id);
     List<ProductResponseDto> getProductsByCategory(Long categoryId);
     Page<ProductResponseDto> searchProductByName(String keyword, int pageNum, int pageSize);
+    ProductResponseDto getProductById(Long id);
 }
