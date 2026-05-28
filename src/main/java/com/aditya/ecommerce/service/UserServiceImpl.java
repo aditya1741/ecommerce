@@ -5,7 +5,7 @@ import com.aditya.ecommerce.dtos.userdtos.UserResponseDto;
 import com.aditya.ecommerce.entity.User;
 import com.aditya.ecommerce.exception.UserNotFoundException;
 import com.aditya.ecommerce.mapper.UserMapper;
-import com.aditya.ecommerce.repository.UserRepo;
+import com.aditya.ecommerce.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -13,9 +13,9 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements IUserService {
-    private final UserRepo repo;
+    private final UserRepository repo;
 
-    public UserServiceImpl(UserRepo repo) {
+    public UserServiceImpl(UserRepository repo) {
         this.repo = repo;
     }
 
