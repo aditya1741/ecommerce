@@ -1,4 +1,4 @@
-package com.aditya.ecommerce.service;
+package com.aditya.ecommerce.service.impl;
 
 import com.aditya.ecommerce.dtos.userdtos.UserRequestDto;
 import com.aditya.ecommerce.dtos.userdtos.UserResponseDto;
@@ -6,6 +6,7 @@ import com.aditya.ecommerce.entity.User;
 import com.aditya.ecommerce.exception.UserNotFoundException;
 import com.aditya.ecommerce.mapper.UserMapper;
 import com.aditya.ecommerce.repository.UserRepository;
+import com.aditya.ecommerce.service.IService.IUserService;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

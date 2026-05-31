@@ -1,4 +1,4 @@
-package com.aditya.ecommerce.service;
+package com.aditya.ecommerce.service.impl;
 
 import com.aditya.ecommerce.dtos.cartdto.AddToCartRequestDto;
 import com.aditya.ecommerce.dtos.cartdto.CartResponseDto;
@@ -12,6 +12,7 @@ import com.aditya.ecommerce.mapper.CartMapper;
 import com.aditya.ecommerce.repository.CartRepository;
 import com.aditya.ecommerce.repository.ProductRepository;
 import com.aditya.ecommerce.repository.UserRepository;
+import com.aditya.ecommerce.service.IService.CartService;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.aditya.ecommerce.service;
+package com.aditya.ecommerce.service.impl;
 
 import com.aditya.ecommerce.dtos.productdtos.ProductRequestDto;
 import com.aditya.ecommerce.dtos.productdtos.ProductResponseDto;
@@ -8,6 +8,7 @@ import com.aditya.ecommerce.exception.ProductNotFoundException;
 import com.aditya.ecommerce.mapper.ProductMapper;
 import com.aditya.ecommerce.repository.CategoryRepository;
 import com.aditya.ecommerce.repository.ProductRepository;
+import com.aditya.ecommerce.service.IService.IProductService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

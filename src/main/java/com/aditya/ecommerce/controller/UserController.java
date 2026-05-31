@@ -2,7 +2,7 @@ package com.aditya.ecommerce.controller;
 
 import com.aditya.ecommerce.dtos.userdtos.UserRequestDto;
 import com.aditya.ecommerce.dtos.userdtos.UserResponseDto;
-import com.aditya.ecommerce.service.UserServiceImpl;
+import com.aditya.ecommerce.service.impl.UserServiceImpl;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 

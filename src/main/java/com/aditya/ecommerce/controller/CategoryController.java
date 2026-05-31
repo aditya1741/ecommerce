@@ -2,7 +2,7 @@ package com.aditya.ecommerce.controller;
 
 import com.aditya.ecommerce.dtos.categorydtos.CategoryRequestDto;
 import com.aditya.ecommerce.dtos.categorydtos.CategoryResponseDto;
-import com.aditya.ecommerce.service.ICategoryService;
+import com.aditya.ecommerce.service.IService.ICategoryService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

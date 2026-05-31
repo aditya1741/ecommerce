@@ -2,7 +2,7 @@ package com.aditya.ecommerce.controller;
 
 import com.aditya.ecommerce.dtos.productdtos.ProductRequestDto;
 import com.aditya.ecommerce.dtos.productdtos.ProductResponseDto;
-import com.aditya.ecommerce.service.IProductService;
+import com.aditya.ecommerce.service.IService.IProductService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.aditya.ecommerce.service;
+package com.aditya.ecommerce.service.IService;
 
 import com.aditya.ecommerce.dtos.productdtos.ProductRequestDto;
 import com.aditya.ecommerce.dtos.productdtos.ProductResponseDto;

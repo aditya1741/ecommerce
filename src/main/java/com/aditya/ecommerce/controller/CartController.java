@@ -2,7 +2,7 @@ package com.aditya.ecommerce.controller;
 
 import com.aditya.ecommerce.dtos.cartdto.AddToCartRequestDto;
 import com.aditya.ecommerce.dtos.cartdto.CartResponseDto;
-import com.aditya.ecommerce.service.CartService;
+import com.aditya.ecommerce.service.IService.CartService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
